@@ -1,0 +1,25 @@
+git clone git://github.com/iBotPeaches/Apktool.git
+cd Apktool
+
+WINDOWS
+gradlew.bat build shadowJar
+
+LINUX
+./gradlew build shadowJar
+
+After build completes you should have a jar file at:
+./brut.apktool/apktool-cli/build/libs/apktool-cli-all.jar
+
+Version:
+/properties/apktool.properties
+
+
+WINDOWS
+gradlew.bat build shadowJar --stacktrace 
+gradlew.bat build shadowJar --info
+gradlew.bat build shadowJar --debug
+
+LINUX
+./gradlew build shadowJar --stacktrace 
+./gradlew build shadowJar --info
+./gradlew build shadowJar --debug
